@@ -4,13 +4,14 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  let [counter, setCounter] = useState(5)
+  const [counter, setCounter] = useState(5)
 
 //let counter = 5 variable update hoga lekin UI me propogate nahi hoga isliye of no use
 
 const addValue = () => {
-  counter = counter + 1;
-  setCounter(counter)
+  //counter = counter + 1;
+  setCounter(counter + 1)
+  setCounter(counter + 1)
 }
 
 const removeValue = () => {
@@ -24,7 +25,7 @@ const removeValue = () => {
       >Add Value</button>
       <br />
       <button
-      onClick={removeValue}>Remove Value {counter}</button>
+      onClick={removeValue}>Remove Value </button>
     </>
   )
 }
